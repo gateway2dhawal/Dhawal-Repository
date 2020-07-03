@@ -1,3 +1,5 @@
+// Created a Console App (.Net Core) for a promotion engine
+
 using System;
 
 namespace PromotionEngine
