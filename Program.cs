@@ -23,17 +23,17 @@ namespace PromotionEngine
             Console.WriteLine("Press any key to apply promotion...");
             Console.ReadKey(true);
             // Applying promotion for product A
-            int quot = A / 3;
-            int rem = A % 3;
-            total = 130 * quot + 50 * rem;
+            int quotient = A / 3;
+            int remainder = A % 3;
+            total = 130 * quotient + 50 * remainder;
             // Applying promotion for product B
-            quot = B / 2;
-            rem = B % 2;
-            total = total + 45 * quot + 30 * rem;
-                // Applying promotion for products C + D
-                int diff = Math.Abs(C - D);
-                if (C < D) { total = total + 30 * C + 15 * diff; }
-                else { total = total + 30 * D + 20 * diff; }
+            quotient = B / 2;
+            remainder = B % 2;
+            total = total + 45 * quotient + 30 * remainder;
+            // Applying promotion for products C + D
+            int difference = Math.Abs(C - D);
+            if (C < D) { total = total + 30 * C + 15 * difference; }
+            else { total = total + 30 * D + 20 * difference; }
             Console.WriteLine("Total: {0}", total);
             Console.ReadKey(true);
         }
